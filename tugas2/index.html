@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Nugie</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-image: url('images/backgroundhd.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .leftcolumn {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .rightcolumn {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-me img {
+            width: 100%;
+            height: 250px;
+            background-color: grey;
+        }
+
+        .about-me .images img {
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
+            background-color: grey;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            background-color: grey;
+        }
+
+        .footer {
+            background-color: #15b8c7;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <h4>By : Hikmawan Nugie Ramadhan</h4>
+        <p>Website yang dibantu oleh AI karena waktu yang mepet...</p>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Home & About</a>
+        <a href="output.html">Nilai Mahasiswa</a>
+    </div>
+
+    <div class="container">
+        <div class="leftcolumn">
+            <div class="card about-me">
+                <h2>About Me</h2>
+                <p>Photo of Me (Nugie): </p>
+                <img src="images/ganteng.jpg" alt="nugie">
+                <p>Diatas ini adalah saya, lihatnya mukanya yang mengikuti kegiatan Malam FT, tapi nugas Numpuk..</p>
+                <p><b>Just Info!</b></p>
+                <p>Artist Favorit :</p>
+                <div class="images">
+                    <img src="images/frank.jpeg" alt="Frank Ocean">
+                    <p>Frank Ocean</p>
+                    <img src="images/rc.jpg" alt="Reality Club">
+                    <p>Reality Club</p>
+                    <img src="images/rex.jpeg" alt="Rex Orange County">
+                    <p>Rex Orange County</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card content">
+                <h2>MALAM-FT 2024</h2>
+                <h5>Kegiatan dilaksanakan oleh BEM - FT, dari tanggal 20 sampai 22</h5>
+                <img src="images/sistekin.jpg" alt="SISTEKIN">
+                <p>Jadi diatas ini adalah foto bersama Mahasiswa SISTEKIN dari angkatan 23 dan 24</p>
+            </div>
+            <div class="card content">
+                <h2>ANGGOTA HIMASISTA</h2>
+                <h5>Foto bareng di air terjun dengan HIMASISTA</h5>
+                <img src="images/himaft.jpg" alt="HIMASISTA">
+                <p>Sebenernya itu bukan air terjun, melainkan air dari saluran wkwkwk</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Terima Kasih sudah Mengunjungi Website Saya ^^</h3>
+    </div>
+
+</body>
+</html>
