@@ -1,0 +1,76 @@
+h1,
+h2 {
+    font-family: helvetica;
+    color: white;
+    font-style: bold;
+}
+
+p {
+    font-family: helvetica;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #110536;
+}
+
+.profile-title {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+}
+
+.about-me {
+    border-radius: 50px;
+}
+
+.details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 16px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.social-links a:hover {
+    color: #008080;
+}
+
+#toggleAbout {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#toggleAbout:hover {
+    background-color: white;
+    color: #110536;
+}
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode h1, .light-mode h2, .light-mode p, .light-mode #toggleAbout {
+    color: black;
+}
