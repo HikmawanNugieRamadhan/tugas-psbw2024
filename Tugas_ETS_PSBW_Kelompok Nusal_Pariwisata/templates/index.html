@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata - Blitar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header-container">
+        <nav class="navbar" id="navbar">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">About</div>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logons.png') }}" alt="Logo Anda">
+            </div>
+            <div class="nav-item">More</div>
+            <div class="nav-item">Social Media</div>
+        </nav>
+        <div class="header-content">
+            <h1>Dimana kita Hari ini?</h1>
+            <h2>Let's Explore Blitar with us</h2>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="two-column-section">
+        <div class="left-image">
+            <h3>Ada apa aja sih?</h3>
+            <h2>Makam Bung Karno</h2>
+            <img src="{{ url_for('static', filename='images/MakamBK.jpeg') }}" alt="Makam Bung Karno">
+            <p>Makam Bung Karno terletak di Blitar, Jawa Timur, dan merupakan tempat peristirahatan terakhir Presiden
+                pertama Indonesia, Ir. Soekarno. Makam ini menjadi destinasi wisata sejarah yang sarat makna. Di 
+                sekitar makam, terdapat Museum Bung Karno dan perpustakaan pengunjung dapat memahami lebih dalam 
+                mengenai perjuangan dan pemikiran Bapak Proklamator bangsa Indonesia.</p>
+        </div>
+        <div class="right-image">
+            <h3>Museum Bung Karno</h3>
+            <p>Museum Bung Karno di Blitar, Jawa Timur, menyimpan berbagai koleksi dan peninggalan penting Presiden Soekarno.
+                Di sini, pengunjung bisa melihat foto-foto, buku-buku, benda pribadi, hingga naskah pidato yang
+                digunakan Bung Karno saat memperjuangkan kemerdekaan Indonesia. Museum ini juga punya ruang khusus
+                yang menampilkan sejarah perjuangan dan pandangan hidupnya</p>
+            <img src="{{ url_for('static', filename='images/MuseumBK.jpg') }}" alt="Museum Bung Karno">
+            <button id="infoBtn" onclick="toggleTable()">Info yang lain?</button>
+            <div id="infoTable" style="display: none;">
+                <h2>Kapan Museum ini Bisa di Kunjungi?</h2>
+                <table class="info-table">
+                    <tr><th>Hari</th><td>Senin - Minggu</td></tr>
+                    <tr><th>Jam Aktif</th><td>07.00 - 18.00</td></tr>
+                    <tr><th>HTM</th><td>Rp. 3.000</td></tr>
+                    <tr><th>Alamat</th><td>Jalan Ir. Soekarno No 152, Bendogerit, Blitar</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section class="comment-section">
+        <h3>Berikan Komentar Anda!</h3>
+        <textarea class="comment-form" id="commentInput" placeholder="Tuliskan komentar Anda di sini..."></textarea>
+    </section>
+
+    <!-- Discover Section -->
+    <section class="discover-toggle">
+        <button id="toggleDiscoverButton">Lihat Wisata Lain?</button>
+    </section>
+
+    <section id="discoverSection" class="discover" style="display: none;">
+        <h2>Beberapa Wisata di Blitar</h2>
+        <div class="locations">
+            <div class="location">
+                <a href="#link1"><img src="{{ url_for('static', filename='images/Gong.jpg') }}" alt="Gong Perdamaian"></a>
+                <h3>Gong Perdamaian</h3>
+                <p>Gong Perdamaian Dunia merupakan simbol persaudaraan dan perdamaian bagi umat manusia.</p>
+            </div>
+            <div class="location">
+                <a href="#link2"><img src="{{ url_for('static', filename='images/blitarpark.jpg') }}" alt="Blitar Park"></a>
+                <h3>Blitar Park</h3>
+                <p>Taman Rekreasi Keluarga yang Paling Populer di Blitar.</p>
+            </div>
+            <div class="location">
+                <a href="#link3"><img src="{{ url_for('static', filename='images/Alunalunblitar.jpg') }}" alt="Alun Alun Blitar"></a>
+                <h3>Alun Alun Blitar</h3>
+                <p>Taman Kota yang Menjadi Tempat berbagai macam Kegiatan Masyarakat Blitar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h2>Our Social Media</h2>
+        <div class="icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/ig.png') }}" alt="Instagram Icon"> Instagram
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/fb.png') }}" alt="Facebook Icon"> Facebook
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <img src="{{ url_for('static', filename='images/tiktok.png') }}" alt="TikTok Icon"> TikTok
+            </a>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

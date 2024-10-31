@@ -1,0 +1,278 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Heading Fonts (Modern Style) */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bolder for a modern look */
+}
+
+
+p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.header-container {
+    background-image: url('https://www.blitarkota.go.id/uploads/halamanstatik/f5P7fwJAMMeXtKAxWXwtDcjt0IjXnWAc8kjyYEvJ.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+/* Navbar Styles */
+.header-container {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item {
+    margin: 0 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header-content {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for contrast */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+/* Two Column Section */
+.two-column-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.left-image, .right-image {
+    width: 45%;
+    text-align: center;
+}
+
+.left-image h2, .right-image h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.left-image img, .right-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.left-image h3, .left-image p, .right-image p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+/* Tombol Info */
+#infoBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #4899e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#infoBtn:hover {
+    background-color: #285fdf;
+}
+
+/* Tabel Informasi dengan Tampilan Modern */
+.info-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info-table th, .info-table td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #f5f7fa;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.info-table td {
+    color: #555;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.info-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Comment Section */
+.comment-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.comment-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.comment-form {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 1em;
+}
+
+/* Discover Section */
+.discover-toggle {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.discover-toggle button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discover-toggle button:hover {
+    background-color: #555;
+}
+
+.discover {
+    text-align: center;
+    padding: 40px 20px;
+    transition: all 0.3s ease;
+}
+
+.discover h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.location {
+    width: 30%;
+    text-align: center;
+}
+
+.location img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Updated Social Media Section */
+.social-media {
+    text-align: center;
+    padding: 10px; /* Kurangi padding */
+    background-color: #1a1a1a; /* Latar belakang lebih gelap */
+    color: white; /* Warna teks putih */
+    border-radius: 5px; /* Tambahkan border-radius untuk efek elegan */
+}
+
+.social-media h2 {
+    font-size: 1.6em; /* Ukuran font lebih kecil */
+    margin-bottom: 10px; /* Kurangi margin */
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Kurangi jarak antar ikon */
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px; /* Kurangi padding */
+    border: 2px solid white; /* Outline */
+    border-radius: 8px;
+    color: white; /* Warna teks */
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.icons a:hover {
+    background-color: #333; /* Warna hover */
+}
+
+.icons img {
+    width: 20px; /* Ukuran ikon lebih kecil */
+    height: 20px;
+    margin-right: 6px; /* Kurangi margin */
+}
