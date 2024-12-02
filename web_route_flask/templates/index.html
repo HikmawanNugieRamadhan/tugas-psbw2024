@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nilai Mahasiswa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container d-flex flex-column align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="card welcome-card shadow p-3 mb-4" style="max-width: 800px; width: 100%;">
+            <div class="card-body text-center">
+                <h3>Selamat datang di Form Nilai Mahasiswa</h3>
+                <p>Isi Data kalian di Form ini ya</p>
+            </div>
+        </div>
+
+        <div class="card form-card shadow p-4" style="max-width: 800px; width: 100%;">
+            <form method="POST" action="/">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="nim">NIM</label>
+                        <input type="text" class="form-control" id="nim" name="nim" placeholder="Masukkan NIM" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="jurusan">Jurusan</label>
+                        <input type="text" class="form-control" id="jurusan" name="jurusan" placeholder="Masukkan Jurusan" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan Email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="tempattinggal">Tempat Tinggal</label>
+                        <input type="text" class="form-control" id="tempattinggal" name="tempattinggal" placeholder="Masukkan Tempat Tinggal" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="tanggallahir">Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="kode">Kode Mata Kuliah</label>
+                        <input type="text" class="form-control" id="kode" name="kode" placeholder="Masukkan Kode Matkul" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="matkul">Mata Kuliah</label>
+                        <input type="text" class="form-control" id="matkul" name="matkul" placeholder="Masukkan Mata Kuliah" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="sks">SKS</label>
+                        <input type="number" class="form-control" id="sks" name="sks" placeholder="Masukkan SKS" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="nilai">Nilai</label>
+                        <input type="number" class="form-control" id="nilai" name="nilai" placeholder="Masukkan Nilai" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

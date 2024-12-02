@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Nilai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="container mt-5">
+        <div class="card shadow-lg">
+            <div class="card-header text-center bg-danger text-white">
+                <h4>Laporan Nilai dan IPK Mahasiswa</h4>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">Laporan Data Nilai</h5>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th scope="row">NIM</th>
+                            <td>{{ nim }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nama</th>
+                            <td>{{ nama }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">IPK</th>
+                            <td>{{ ipk }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SKS</th>
+                            <td>{{ sks }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center mt-4">
+                    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-danger">Kembali ke Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
